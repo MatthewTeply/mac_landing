@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <title>Homepage</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="imgs/favicon.png"/>
+
+    <!-- Stylesheet links -->
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/fa/fa.css">
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="black-div"></div>
+    <div class="wrapper">
+        <div class="container">
+            
+            <div class="top-div">
+                <i class="fa fa-cog settings-icon"></i>
+                <h1 class="clock-h1"></h1>
+            </div>
+
+            <section class="settings-section">
+                <input type="checkbox" id="weather-bg-toggle" class="setting-toggle" data-setting="weather-bg">
+                <label for="weather-bg-toggle">Display background dependent on weather </label>
+                <br>
+                <button class="refresh-bttn"><i class="fa fa-sync"></i> Refresh</button>
+            </section>
+
+            <section class="search-div">
+                <form class="search-form">
+                        <input type="text" placeholder="Google search..." autofocus>
+                </form>
+            </section>
+
+            <main>
+                <div class="links-div">
+                    <ul>
+                        <li><a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube"></i>YouTube</a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook"></i>Facebook</a></li>
+                        <li><a target="_blank" href="https://www.idnes.cz/"><i class="fas fa-info"></i>iDnes</a></li>
+                        <li><a target="_blank" href="https://www.reddit.com/"><i class="fab fa-reddit-square"></i>Reddit</a></li>
+                    </ul>
+                </div>
+                <div class="links-div">
+                    <ul>
+                        <li><a target="_blank" href="https://mail.google.com/"><i class="fa fa-envelope"></i>Gmail</a></li>
+                        <li><a target="_blank" href="https://docs.google.com/"><i class="fas fa-file-alt"></i>Google Docs</a></li>
+                        <li><a target="_blank" href="https://drive.google.com/"><i class="fab fa-google-drive"></i>Google Drive</a></li>
+                        <li><a target="_blank" href="https://www.github.com/"><i class="fab fa-github"></i>Github</a></li>
+                    </ul>
+                    </div>
+                <div class="image-div"></div>
+            </main>
+
+            <section class="weather-div">
+                <h1 class="weather-temp-weather"></h1>
+            </section>
+
+            <section class="custom-links-div">
+                <h3><i class="fa fa-link"></i> Custom links </h3>
+                <button class="custom-links-show"><i class="fa fa-angle-down"></i></button>
+                <button class="custom-links-add"><i class="fa fa-plus"></i></button>
+                <span class="custom-links-add-label">New link</span>
+                <form class="custom-links-form">
+                    <button class="custom-links-cancel" type="button"><i class="fa fa-times"></i></button>
+                    <input type="text" name="custom-link-label" placeholder="Name of link">
+                    <input type="text" name="custom-link-url" placeholder="URL of link">
+                    <button type="submit" style="display:none;"></button>
+                </form>
+                <ul>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Script links -->
+    <script src="JS/jquery.js"></script>
+    <script src="JS/search.js"></script>
+    <script src="JS/clock.js"></script>
+    <script src="JS/misc.js"></script>
+    <script src="JS/key_shortcuts.js"></script>
+    <script src="JS/weather.js"></script>
+    <script src="JS/forecast.js"></script>
+    <script src="JS/custom_links.js"></script>
+    <script src="JS/settings.js"></script>
+
+</body>
+</html>
